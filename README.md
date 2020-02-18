@@ -2,6 +2,7 @@
 
 Git : cloner un projet, travailler à plusieurs et créer des branches
 
+      ```js
       Cloner un projet (par ex. pour travailler à plusieurs ou pour sauvegarder)...
       et synchroniser les différentes copies
       git clone pour dupliquer un dépôt
@@ -22,6 +23,7 @@ Git : cloner un projet, travailler à plusieurs et créer des branches
       répertoire repoB situé n'importe où sauf sous l'arborescence de repoA évidemment. 
       Pour simplifier nous prendrons repoA et repoB au même niveau, 
       même si en pratique ça n'a pas grand intérêt.
+      
       
 ```js
 $ git status
@@ -97,29 +99,7 @@ $ diff ../repoA/firstFile.txt ./firstFile.txt
       
    
  ```js
- 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
+
 $ git pull 
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (2/2), done.
@@ -439,30 +419,7 @@ Deleted branch myBranchFromB (was db36634).
          
 ```js
 
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
+
 $ cd ../repoB
 $ git checkout master
 Switched to branch 'master'
