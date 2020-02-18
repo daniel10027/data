@@ -1,28 +1,27 @@
 # data
 
-Git : cloner un projet, travailler à plusieurs et créer des branches
+### Git : cloner un projet, travailler à plusieurs et créer des branches
+#### synchroniser les différentes copies
+##### git clone pour dupliquer un dépôt
 
-      ```js
-      Cloner un projet (par ex. pour travailler à plusieurs ou pour sauvegarder)...
-      et synchroniser les différentes copies
-      git clone pour dupliquer un dépôt
-      La commande "git clone </path/to/existing/git/repository> 
-      </path/where/it/should/be/cloned>" permet de cloner un dépôt existant 
-      (en local ou à travers un réseau si le chemin est une URL) à un autre endroit.
-      La métaphore du clonage doit être comprise ici comme une copie exacte : 
-      après "git clone" les deux dépôts sont les images parfaites l'une de l'autre :
-      ils possèdent le même historique, 
-      et il n'y en a pas un qui est plus légitime que l'autre (en fait, on verra dans 
-      la section sur "git pull" que suite au clonage la branche master du clone fait 
-      référence à la branche master du cloné). Si plusieurs personnes travaillent sur 
-      un projet, elles peuvent ainsi en obtenir chacune une copie.
-      Dans un premier temps, nous allons synchroniser les dépôts, 
-      puis nous verrons dans un second temps comment détecter et gérer les conflits 
-      qui peuvent survenir lors de modifications concurrentes. Nous supposerons que le 
-      projet initial était dans le répertoire repoA, et qu'on le clone dans un autre 
-      répertoire repoB situé n'importe où sauf sous l'arborescence de repoA évidemment. 
-      Pour simplifier nous prendrons repoA et repoB au même niveau, 
-      même si en pratique ça n'a pas grand intérêt.
+```js
+
+La commande "git clone </path/to/existing/git/repository> </path/where/it/should/be/cloned>"
+permet de cloner un dépôt existant (en local ou à travers un réseau si le chemin est une URL) 
+à un autre endroit. La métaphore du clonage doit être comprise ici comme une copie exacte :
+après "git clone" les deux dépôts sont les images parfaites l'une de l'autre : ils possèdent
+le même historique, et il n'y en a pas un qui est plus légitime que l'autre (en fait,
+on verra dans la section sur "git pull" que suite au clonage la branche master du clone fait
+référence à la branche master du cloné). Si plusieurs personnes travaillent sur un projet,
+elles peuvent ainsi en obtenir chacune une copie.
+Dans un premier temps, nous allons synchroniser les dépôts, puis nous verrons dans un second
+temps comment détecter et gérer les conflits qui peuvent survenir lors de modifications 
+concurrentes. Nous supposerons que le projet initial était dans le répertoire repoA, et qu'on
+le clone dans un autre répertoire repoB situé n'importe où sauf sous l'arborescence de repoA 
+évidemment.
+Pour simplifier nous prendrons repoA et repoB au même niveau,
+même si en pratique ça n'a pas grand intérêt.
+```
       
       
 ```js
